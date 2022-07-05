@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    
+    <head>
+        <title>SRI VARVADHU SAREES</title>
+        <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            header
+            {
+               display: flex;
+               justify-content: space-between;
+               background-color: white;
+               color: black;
+               box-shadow: 5px 5px 10px gray;
+               padding: 22.5px;
+               position: sticky;
+               top: 0px;
+            }
+            .social-bar
+            {
+                position: fixed;
+                bottom: 200px;
+                right: 10px;
+                background-color: white;
+                padding: 7px;
+                box-shadow: 5px 5px 10px black;
+            } 
+            .brand-name
+            {
+              color: rgb(255, 186, 186);
+              font-size: 30px;
+              font-family: sans-serif;
+              font-weight: bold;
+              text-shadow: 2px 2px 3px black;
+            }
+            .brand-items
+            {
+              font-size: 18px;
+              font-family: arial;
+              font-weight: bold;
+            }
+            .brand-items span
+            {
+              margin-right: 15px;
+            }
+            .brand-toolbar
+            {
+              font-size: 18px;
+              font-family: arial;
+              font-weight: bold;
+            }
+            .brand-toolbar span
+            {
+              margin-right: 15px;
+            }
+            article
+            {
+                margin-top: 15px;
+                box-shadow: 5px 5px 10px gray;
+                color:white;
+                background-color:black;
+                font-size: 18px;
+                padding: 15px;
+                text-align: center;
+                
+            }
+            .top
+            {
+                background-color: grey;
+                text-align: center;
+                padding: 15px;
+            }
+            .main
+            {
+                background-color: white;
+                display: grid;
+                grid-template-columns: 3fr 3fr 6fr;
+                font-family: Arial;
+                padding: 20px;
+                color: black;
+                line-height: 30px;
+            }  
+            .right
+            {
+                border-left: 2px solid gray;
+                padding: 10px;
+            } 
+            .title
+            {
+                font-weight: bold ;
+                
+            }  
+            
+            footer
+            {
+                box-shadow: 5px 5px 10px black;
+            } 
+            .bi-facebook ,.bi-twitter,.bi-google,.bi-linkedin 
+            {
+            color: blue;
+            }
+            .bi-youtube,.bi-instagram
+            {
+            color: red;
+            }
+            a
+            {
+                text-decoration: none;
+                color: black;
+            }
+            .work-sarees
+            {
+                background-image: url("./public/saree/saree1.jpg");
+                background-size: cover;
+                width: 500px;
+                height: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .designer-sarees
+            {
+                background-image: url("./public/saree/sarees2.jpg");
+                background-size: cover;
+                width: 500px;
+                height: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .daily-sarees
+            {
+                background-image: url("./public/saree/sarees3.jpg");
+                background-size: cover;
+                width: 500px;
+                height: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .brand-banner
+            {
+                display: flex;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                
+            }
+            h1
+            {
+                text-align: center;
+                color: white;
+                size: 50px;
+                text-shadow: 2px 2px 3px black;
+                font-family: Arial;                
+            }
+            h2
+            {
+                text-align: center;
+                color: black;
+                size: 50px;
+                font-family: Arial;
+                font-size: 30px;
+            }
+            h3
+                {
+                    text-align: center;
+                }
+            .new-collection
+            {
+                margin-top: 175px;
+            }
+            button
+            {
+                background-color: white;
+                color: black;
+                width: 150px;
+                height: 35px;
+                font-size: 16px;
+                font-family: sans-serif;
+                font-weight: bold;
+                border:none;
+                margin-bottom: 5px;
+            }
+           
+            .brand-information
+            {
+                font-size: 15px;
+                text-align: center;
+                display: grid;
+                grid-template-columns: 300px 400px 400px 300px;
+                height: 50px;
+                border-bottom: 2px solid gray;
+                padding: 20px;
+                
+            }
+            .bi-truck,.bi-lock,.bi-tag,.bi-arrow-counterclockwise
+            {
+                color: red;
+            }
+            .info
+            {
+                font-size: 18.5px;
+                font-family: 'Times New Roman';
+                font-weight: bold;
+                padding: 10px; 
+            }
+            .pic4
+            {
+                background-image: url("./public/saree/saree4.jpg");
+                background-size: cover;
+                width: 600px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                color: black;
+                text-align: center;
+                font-size: 30px;
+                font-family: Arial;
+                font-weight: bold;
+                text-shadow: 2px 2px 2px gray;
+                align-items: center;
+                
+            }
+            .pic5
+            {
+                background-image: url("./public/saree/saree5.jpg");
+                background-size: cover;
+                width: 600px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                color: black;
+                text-align: center;
+                font-size: 30px;
+                font-family: Arial;
+                font-weight: bold;
+                text-shadow: 2px 2px 2px gray;
+                align-items: center;
+            }
+            .pic6
+            {
+                background-image: url("./public/saree/saree6.jpg");
+                background-size: cover;
+                width: 600px;
+                height: 500px; 
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                color: black;
+                text-align: center;
+                font-size: 30px;
+                font-family: Arial;
+                font-weight: bold;
+                text-shadow: 2px 2px 2px gray;
+                align-items: center;
+            }
+            .pic7
+            {
+                background-image: url("./public/saree/saree7.jpg");
+                background-size: cover;
+                width: 600px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                color: black;
+                text-align: center;
+                font-size: 30px;
+                font-family: Arial;
+                font-weight: bold;
+                text-shadow: 2px 2px 2px gray;
+                align-items: center;
+            }
+            .row1
+            {
+                display: grid;
+                grid-template-columns: 600px 600px;
+                margin-left: 150px;
+            }
+            .row2
+            {
+                display: grid;
+                grid-template-columns: 600px 600px;
+                margin-left: 150px;
+                margin-bottom: 100px;
+
+            }
+            iframe
+            {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .main-container1,.main-container2
+            {
+                display: flex;
+                padding: 10px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                margin-left: 25px;
+            }
+            .sub-container
+            {
+                width: 200px;
+                box-shadow: 1px 1px 1px 2px gray;
+                margin-right: 20px;
+                text-align: center;
+                padding: 20px;
+
+            }
+            .container-heading
+            {
+                text-align: center;
+                font-size: 20px;
+                font-family: sans-serif;
+                font-weight: bold;
+                margin-bottom: 17.5px;
+            }
+            .container-pic
+            {
+                text-align: center;
+                margin-bottom: 17.5px;
+            }
+            .container-body
+            {
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 17.5px;
+            }
+            .container-rating
+            {
+                text-align: center;
+                color: gold;
+                margin-bottom: 17.5px;
+            }
+            .pic-head
+            {
+                background-color: rgb(44, 41, 41);
+                width: 1500px;
+                height: 500px;
+                box-shadow: 3px 3px 2px gray;
+            }
+            .pic-head-text
+            {
+                text-align: center;
+                font-size: 50px;
+                font-family: arital;
+                font-weight: bold;
+                margin-top: 75px;
+                color: white;
+            }
+            .container1
+            {
+                width: 1500px;
+                height: 600px;
+                display: flex;
+                margin-top: 75px;
+                margin-bottom: 75px;
+                margin-right: 300px;
+                margin-top: -300px;
+                
+                
+            }
+            .sub-container1
+            {
+                background-color: white;
+                box-shadow: 2px 2px 2px 2px gray;
+                height: 600px;
+                width: 550px;
+                margin-left: 110px;
+                font-family: arial;
+                
+                padding: 16px;
+            }
+            .pic-container
+            {
+                display: grid;
+                grid-template-columns: 7.5fr 7.5fr;
+               
+            }
+                            
+            
+            
+        </style>
+    </head>
+    <body bgcolor="white">   
+        <header>
+                <div class="brand-name" >
+                    Sri VarVadhu sarees (SVS) 
+                </div>
+                <div class="brand-items">
+                    <span><a href="./index.html">HOME</a></span>
+                    <span><a href="./work-saree.html">WORK SAREES</a></span>
+                    <span><a href="./designer-saree.html">DESIGNER SAREES</a></span>
+                    <span><a href="./daily-saree.html">DAILY SAREES</a></span>
+                           
+                </div>
+                <div class="brand-toolbar">
+                    <span class="bi bi-search"></span>
+                    <span class="bi bi-person"></span>
+                    <span class="bi bi-heart"></span>
+                    <span class="bi bi-cart"></span>
+                    <san class="bi bi-gift"></san>
+                </div> 
+                <div class="social-bar">
+                    <div class="bi bi-facebook"></div>
+                    <div class="bi bi-twitter"></div>
+                    <div class="bi bi-instagram"></div>
+                    <div class="bi bi-google"></div>
+                    <div class="bi bi-linkedin"></div>
+                    <div class="bi bi-youtube"></div>
+                </div>
+        </header>
+        <main>
+            <article >
+                Sarees Starting From Only 199/-
+            </article>
+        <div class="brand-banner">
+            <div class="work-sarees">
+               <div>
+                <h1>WORK SAREES</h1>
+               </div>
+               <div>
+                   <button><a href="./work-saree.html">SHOP NOW </a><span class="bi bi-arrow-down"></span></button>
+               </div>
+            </div>
+            <div class="designer-sarees">
+                <div>
+                    <h1>DESIGNER SAREES</h1>
+                </div>
+                <div>
+                    <button><a href="./Designer-saree.html">SHOP NOW </a><span class="bi bi-arrow-down"></span></button>
+                </div>
+            </div>
+            <div class="daily-sarees">
+                <div>
+                    <h1>DAILY SAREES</h1>
+                </div>
+                <div>
+                    <button><a href="./Daily-saree.html">SHOP NOW </a><span class="bi bi-arrow-down"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="brand-information">
+            <div>
+                <span class="bi bi-truck"> </span>
+                <span class="info">Free Shipping</span>
+                <div >For All Order Over 999/-</div>
+            </div>
+            <div>
+                <span class="bi bi-lock"> </span> 
+                <span class="info">Shopping</span>
+                <div>You Are In Safe Hand</div>
+            </div>
+            <div>
+                <span class="bi bi-tag"> </span>
+                <span class="info">Over 1000 Style</span>
+                <div>We Have Everything You Need</div>
+            </div>
+            <div>
+                <span class="bi bi-arrow-counterclockwise"> </span>
+                <span class="info">Free Returns</span>
+                <div>Return Items Within 30 Days</div>
+            </div>
+        </div>
+        <div class="new-collection">
+        <h3>NEW COLLECTION</h3>
+        <h2>BEST PICKS 2022</h2>
+        </div>
+        <div class="row1">
+            <div class="pic4">
+                <span>SUMMER COLLECTION</span>
+                <button><a href="./Summer-card.html" target="frameBody">SHOP NOW </a><span class="bi bi-arrow-down"></span></button>
+            </div>
+            <div class="pic5">
+                <span>NEW collection</a></span>
+                <button><a href="./new-designer.html" target="frameBody">SHOP NOW </a><span class="bi bi-arrow-down"></span></button>
+            </div>
+        </div>
+
+        <iframe src="./public/saree/logo.jpeg" name="frameBody" width="100%" height="450px"> </iframe>
+
+        <div class="row2">    
+            <div class="pic6">
+                <span>UPCOMING COLLECTION</span>
+                <button><a href="./upcoming-card.html" target="frameBody2">SHOP NOW </a><span class="bi bi-arrow-right"></span></button>
+            </div>
+            <div class="pic7">
+                <SPAN>ORGANZA SAREES</SPAN>
+                <button><a href="./organza-card.html" target="frameBody2">SHOP NOW </a><span class="bi bi-arrow-right"></span></button>
+            </div>
+        </div>
+
+        
+        <iframe src="./public/saree/logo.jpeg" name="frameBody2" width="100%" height="450px"> </iframe> 
+        <footer>  
+            <div class="top">
+                <button><a href="./index.html">BACK TO TOP </a></span></button>
+            </div>
+            <div class="main">
+                <div class="left">
+                 <div class="title">TO KNOW US -</div>
+                 <div><button>ABOUT US</button></div>
+                 <div><button>GIFT A SMILE</button></div>
+                </div>
+                <div>
+                    <div class="title">CONNECT WITH US -</div>
+                    <div><button>FACEBOOK</button></div>
+                    <div><button>INSTAGRAM</button></div>
+                </div>
+                <div class="right">
+                <div class="title">ADDRESS -</div>
+                <div>
+                    Sri Varvadhu Sarees,
+                    #8-3-231/f/33, Sri Krshna Nagar,
+                    Green Bawarchi Restaurant Lane,
+                    Hyderabad 500045,Telangana(INDIA)
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
